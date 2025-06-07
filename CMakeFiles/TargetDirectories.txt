@@ -1,0 +1,6 @@
+/home/Shiva/Documents/dc_diploma_code/CMakeFiles/dc_diploma_code.dir
+/home/Shiva/Documents/dc_diploma_code/CMakeFiles/edit_cache.dir
+/home/Shiva/Documents/dc_diploma_code/CMakeFiles/rebuild_cache.dir
+/home/Shiva/Documents/dc_diploma_code/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+/home/Shiva/Documents/dc_diploma_code/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/home/Shiva/Documents/dc_diploma_code/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

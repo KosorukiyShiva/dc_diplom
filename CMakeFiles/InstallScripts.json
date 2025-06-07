@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/Shiva/Documents/dc_diploma_code/cmake_install.cmake",
+		"/home/Shiva/Documents/dc_diploma_code/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
