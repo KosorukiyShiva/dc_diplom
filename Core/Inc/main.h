@@ -61,6 +61,8 @@ void Error_Handler(void);
 #define UART_TERMINAL_TX_GPIO_Port GPIOA
 #define UART_TERMINAL_RX_Pin GPIO_PIN_3
 #define UART_TERMINAL_RX_GPIO_Port GPIOA
+#define BME280_CS_Pin GPIO_PIN_4
+#define BME280_CS_GPIO_Port GPIOA
 #define BME280_SCK_Pin GPIO_PIN_5
 #define BME280_SCK_GPIO_Port GPIOA
 #define DME280_MISO_Pin GPIO_PIN_6
