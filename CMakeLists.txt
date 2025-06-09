@@ -37,17 +37,26 @@ enable_language(C ASM)
 # Create an executable object type
 add_executable(${CMAKE_PROJECT_NAME})
 
+set(HEX_FILE ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.hex)
+
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
 
 # Link directories setup
 target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined library search paths
-)
+    ${CMAKE_SOURCE_DIR}/Core/Src
+    ${CMAKE_SOURCE_DIR}/Core/Inc
+    # Add STM32CubeMX generated library search paths
+    ${CMAKE_SOURCE_DIR}/cmake/stm32cubemx/lib
+)   
 
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user sources here
+    ${CMAKE_SOURCE_DIR}/Core/Src/ds18b20.c
+    ${CMAKE_SOURCE_DIR}/Core/Src/uart_term.c
+    ${CMAKE_SOURCE_DIR}/Core/Src/onewire.c
+# Add user sources here
 )
 
 # Add include paths
@@ -65,4 +74,7 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
     stm32cubemx
 
     # Add user defined libraries
+)
+add_custom_command(TARGET ${CMAKE_PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_OBJCOPY} -O ihex $<TARGET_FILE:${CMAKE_PROJECT_NAME}> ${HEX_FILE}
 )

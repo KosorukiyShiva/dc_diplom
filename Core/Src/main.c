@@ -18,7 +18,8 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
+#include "ds18b20.h"
+#include "uart_term.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -63,10 +64,8 @@ static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
-
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
 /* USER CODE END 0 */
 
 /**
@@ -77,7 +76,8 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+  DS18B20 temperatureSensor;
+  float temp = 0;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -105,6 +105,19 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
+  DS18B20_Init(&temperatureSensor, &huart1);
+  DS18B20_InitializationCommand(&temperatureSensor);
+  DS18B20_ReadRom(&temperatureSensor);
+  DS18B20_ReadScratchpad(&temperatureSensor);
+
+  uint8_t settings[3];
+  settings[0] = temperatureSensor.temperatureLimitHigh;
+  settings[1] = temperatureSensor.temperatureLimitLow;
+  settings[2] = DS18B20_12_BITS_CONFIG;
+  DS18B20_InitializationCommand(&temperatureSensor);
+  DS18B20_SkipRom(&temperatureSensor);
+  DS18B20_WriteScratchpad(&temperatureSensor, settings);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -114,6 +127,16 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    DS18B20_InitializationCommand(&temperatureSensor);
+    DS18B20_SkipRom(&temperatureSensor);
+    DS18B20_ConvertT(&temperatureSensor, DS18B20_DATA);
+    DS18B20_InitializationCommand(&temperatureSensor);
+    DS18B20_SkipRom(&temperatureSensor);
+    DS18B20_ReadScratchpad(&temperatureSensor);
+    temp = temperatureSensor.temperature;
+
+    throw_data_uart_term(huart2,temp,0,0,0);
+    HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }

@@ -103,6 +103,33 @@ build CMakeFiles/dc_diploma_code.dir/startup_stm32f103x6.s.obj: ASM_COMPILER__dc
   OBJECT_DIR = CMakeFiles/dc_diploma_code.dir
   OBJECT_FILE_DIR = CMakeFiles/dc_diploma_code.dir
 
+build CMakeFiles/dc_diploma_code.dir/Core/Src/ds18b20.c.obj: C_COMPILER__dc_diploma_code_unscanned_Debug /home/Shiva/Documents/dc_diploma_code/Core/Src/ds18b20.c || cmake_object_order_depends_target_dc_diploma_code
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103x6 -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/dc_diploma_code.dir/Core/Src/ds18b20.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  INCLUDES = -I/home/Shiva/Documents/dc_diploma_code/Core/Inc -I/home/Shiva/Documents/dc_diploma_code/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/Shiva/Documents/dc_diploma_code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/Shiva/Documents/dc_diploma_code/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/Shiva/Documents/dc_diploma_code/Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/dc_diploma_code.dir
+  OBJECT_FILE_DIR = CMakeFiles/dc_diploma_code.dir/Core/Src
+
+build CMakeFiles/dc_diploma_code.dir/Core/Src/uart_term.c.obj: C_COMPILER__dc_diploma_code_unscanned_Debug /home/Shiva/Documents/dc_diploma_code/Core/Src/uart_term.c || cmake_object_order_depends_target_dc_diploma_code
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103x6 -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/dc_diploma_code.dir/Core/Src/uart_term.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  INCLUDES = -I/home/Shiva/Documents/dc_diploma_code/Core/Inc -I/home/Shiva/Documents/dc_diploma_code/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/Shiva/Documents/dc_diploma_code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/Shiva/Documents/dc_diploma_code/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/Shiva/Documents/dc_diploma_code/Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/dc_diploma_code.dir
+  OBJECT_FILE_DIR = CMakeFiles/dc_diploma_code.dir/Core/Src
+
+build CMakeFiles/dc_diploma_code.dir/Core/Src/onewire.c.obj: C_COMPILER__dc_diploma_code_unscanned_Debug /home/Shiva/Documents/dc_diploma_code/Core/Src/onewire.c || cmake_object_order_depends_target_dc_diploma_code
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DSTM32F103x6 -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/dc_diploma_code.dir/Core/Src/onewire.c.obj.d
+  FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11
+  INCLUDES = -I/home/Shiva/Documents/dc_diploma_code/Core/Inc -I/home/Shiva/Documents/dc_diploma_code/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/Shiva/Documents/dc_diploma_code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/Shiva/Documents/dc_diploma_code/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/Shiva/Documents/dc_diploma_code/Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles/dc_diploma_code.dir
+  OBJECT_FILE_DIR = CMakeFiles/dc_diploma_code.dir/Core/Src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target dc_diploma_code
@@ -111,11 +138,12 @@ build CMakeFiles/dc_diploma_code.dir/startup_stm32f103x6.s.obj: ASM_COMPILER__dc
 #############################################
 # Link the executable dc_diploma_code.elf
 
-build dc_diploma_code.elf: C_EXECUTABLE_LINKER__dc_diploma_code_Debug cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj CMakeFiles/dc_diploma_code.dir/Core/Src/main.c.obj CMakeFiles/dc_diploma_code.dir/Core/Src/stm32f1xx_it.c.obj CMakeFiles/dc_diploma_code.dir/Core/Src/stm32f1xx_hal_msp.c.obj CMakeFiles/dc_diploma_code.dir/Core/Src/sysmem.c.obj CMakeFiles/dc_diploma_code.dir/Core/Src/syscalls.c.obj CMakeFiles/dc_diploma_code.dir/startup_stm32f103x6.s.obj || cmake/stm32cubemx/STM32_Drivers
+build dc_diploma_code.elf: C_EXECUTABLE_LINKER__dc_diploma_code_Debug cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj CMakeFiles/dc_diploma_code.dir/Core/Src/main.c.obj CMakeFiles/dc_diploma_code.dir/Core/Src/stm32f1xx_it.c.obj CMakeFiles/dc_diploma_code.dir/Core/Src/stm32f1xx_hal_msp.c.obj CMakeFiles/dc_diploma_code.dir/Core/Src/sysmem.c.obj CMakeFiles/dc_diploma_code.dir/Core/Src/syscalls.c.obj CMakeFiles/dc_diploma_code.dir/startup_stm32f103x6.s.obj CMakeFiles/dc_diploma_code.dir/Core/Src/ds18b20.c.obj CMakeFiles/dc_diploma_code.dir/Core/Src/uart_term.c.obj CMakeFiles/dc_diploma_code.dir/Core/Src/onewire.c.obj || cmake/stm32cubemx/STM32_Drivers
   CONFIG = Debug
   FLAGS = -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3
+  LINK_PATH = -L/home/Shiva/Documents/dc_diploma_code/Core/Src   -L/home/Shiva/Documents/dc_diploma_code/Core/Inc   -L/home/Shiva/Documents/dc_diploma_code/cmake/stm32cubemx/lib
   OBJECT_DIR = CMakeFiles/dc_diploma_code.dir
-  POST_BUILD = :
+  POST_BUILD = cd /home/Shiva/Documents/dc_diploma_code/build/Debug && arm-none-eabi-objcopy -O ihex /home/Shiva/Documents/dc_diploma_code/build/Debug/dc_diploma_code.elf /home/Shiva/Documents/dc_diploma_code/build/Debug/dc_diploma_code.hex
   PRE_LINK = :
   TARGET_FILE = dc_diploma_code.elf
   TARGET_PDB = dc_diploma_code.elf.dbg

@@ -3,6 +3,7 @@
 
 #include "main.h"
 #include "stm32f1xx_hal.h"
+// #include <cstdint>
 /* Declarations and definitions ----------------------------------------------*/
 #define DS18B20_SERIAL_NUMBER_LEN_BYTES                                     6
 #define DS18B20_SERIAL_NUMBER_OFFSET_BYTES                                  1
@@ -56,11 +57,17 @@ typedef enum
   DS18B20_DELAY           = 0x02,
 } DS18B20_WaitCondition;
 /* Functions -----------------------------------------------------------------*/
-extern DS18B20_Status DS18B20_ConvertT(DS18B20 *sensor, DS18B20_WaitCondition waitCondition);
-extern DS18B20_Status DS18B20_ReadScratchpad(DS18B20 *sensor);
-extern DS18B20_Status DS18B20_WriteScratchpad(DS18B20 *sensor, uint8_t *data);
-extern DS18B20_Status DS18B20_InitializationCommand(DS18B20 *sensor);
-extern DS18B20_Status DS18B20_ReadRom(DS18B20 *sensor);
-extern DS18B20_Status DS18B20_SkipRom(DS18B20 *sensor);
-extern void DS18B20_Init(DS18B20 *sensor, UART_HandleTypeDef *huart);
+DS18B20_Status DS18B20_ConvertT(DS18B20 *sensor, DS18B20_WaitCondition waitCondition);
+DS18B20_Status DS18B20_ReadScratchpad(DS18B20 *sensor);
+DS18B20_Status DS18B20_WriteScratchpad(DS18B20 *sensor, uint8_t *data);
+DS18B20_Status DS18B20_InitializationCommand(DS18B20 *sensor);
+DS18B20_Status DS18B20_ReadRom(DS18B20 *sensor);
+DS18B20_Status DS18B20_SkipRom(DS18B20 *sensor);
+void DS18B20_Init(DS18B20 *sensor, UART_HandleTypeDef *huart);
+static uint8_t CalculateChecksum(uint8_t *data, uint8_t length);
+static DS18B20_Status ExecuteCommand(DS18B20 *sensor, DS18B20_Command command, uint8_t *data);
+static void WaitForConversionFinished(DS18B20 *sensor);
+void DS18B20_Init(DS18B20 *sensor, UART_HandleTypeDef *huart);
+
+
 #endif

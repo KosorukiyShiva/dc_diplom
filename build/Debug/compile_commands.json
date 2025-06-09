@@ -37,6 +37,24 @@
 },
 {
   "directory": "/home/Shiva/Documents/dc_diploma_code/build/Debug",
+  "command": "/usr/bin/arm-none-eabi-gcc -DDEBUG -DSTM32F103x6 -DUSE_HAL_DRIVER -I/home/Shiva/Documents/dc_diploma_code/Core/Inc -I/home/Shiva/Documents/dc_diploma_code/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/Shiva/Documents/dc_diploma_code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/Shiva/Documents/dc_diploma_code/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/Shiva/Documents/dc_diploma_code/Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles/dc_diploma_code.dir/Core/Src/ds18b20.c.obj -c /home/Shiva/Documents/dc_diploma_code/Core/Src/ds18b20.c",
+  "file": "/home/Shiva/Documents/dc_diploma_code/Core/Src/ds18b20.c",
+  "output": "CMakeFiles/dc_diploma_code.dir/Core/Src/ds18b20.c.obj"
+},
+{
+  "directory": "/home/Shiva/Documents/dc_diploma_code/build/Debug",
+  "command": "/usr/bin/arm-none-eabi-gcc -DDEBUG -DSTM32F103x6 -DUSE_HAL_DRIVER -I/home/Shiva/Documents/dc_diploma_code/Core/Inc -I/home/Shiva/Documents/dc_diploma_code/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/Shiva/Documents/dc_diploma_code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/Shiva/Documents/dc_diploma_code/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/Shiva/Documents/dc_diploma_code/Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles/dc_diploma_code.dir/Core/Src/uart_term.c.obj -c /home/Shiva/Documents/dc_diploma_code/Core/Src/uart_term.c",
+  "file": "/home/Shiva/Documents/dc_diploma_code/Core/Src/uart_term.c",
+  "output": "CMakeFiles/dc_diploma_code.dir/Core/Src/uart_term.c.obj"
+},
+{
+  "directory": "/home/Shiva/Documents/dc_diploma_code/build/Debug",
+  "command": "/usr/bin/arm-none-eabi-gcc -DDEBUG -DSTM32F103x6 -DUSE_HAL_DRIVER -I/home/Shiva/Documents/dc_diploma_code/Core/Inc -I/home/Shiva/Documents/dc_diploma_code/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/Shiva/Documents/dc_diploma_code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/Shiva/Documents/dc_diploma_code/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/Shiva/Documents/dc_diploma_code/Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o CMakeFiles/dc_diploma_code.dir/Core/Src/onewire.c.obj -c /home/Shiva/Documents/dc_diploma_code/Core/Src/onewire.c",
+  "file": "/home/Shiva/Documents/dc_diploma_code/Core/Src/onewire.c",
+  "output": "CMakeFiles/dc_diploma_code.dir/Core/Src/onewire.c.obj"
+},
+{
+  "directory": "/home/Shiva/Documents/dc_diploma_code/build/Debug",
   "command": "/usr/bin/arm-none-eabi-gcc -DDEBUG -DSTM32F103x6 -DUSE_HAL_DRIVER -I/home/Shiva/Documents/dc_diploma_code/Core/Inc -I/home/Shiva/Documents/dc_diploma_code/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/Shiva/Documents/dc_diploma_code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/Shiva/Documents/dc_diploma_code/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/Shiva/Documents/dc_diploma_code/Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -o cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj -c /home/Shiva/Documents/dc_diploma_code/Core/Src/system_stm32f1xx.c",
   "file": "/home/Shiva/Documents/dc_diploma_code/Core/Src/system_stm32f1xx.c",
   "output": "cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f1xx.c.obj"
